@@ -373,7 +373,6 @@ body {
 	height: 200px;
 	margin: 0 auto;
 	padding: 0;
-	background: #ffd;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
