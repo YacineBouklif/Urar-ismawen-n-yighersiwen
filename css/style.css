@@ -1,0 +1,459 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	line-height: 1.5em;
+	color: #000;
+	}
+	/* "You did it!" message */
+#successMessage {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	z-index: 100;
+	background: #dfd;
+	}
+@media (max-width: 599px) {
+
+#site-logo {
+	font-weight:normal;
+	font-size:1.3em;
+	background:rgb(55,55,55);
+	color:#fff;
+	padding: 5px 22px 5px 22px;
+	}
+#site-logo span {
+	float:right;
+	}
+#content {
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	}
+#cardPile {
+	width: 100%;
+	height: 160px;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	}
+#cardPile > .ui-draggable {
+	flex-grow: 1;
+	flex: 1 1 30%;
+	height: 80px;
+	margin:0;
+	padding: 0;
+	}
+#cardPile  > .ui-draggable:nth-child(-n+3) {
+	margin-bottom:6px;
+	}
+#cardSlots {
+	width: 100%;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 22px;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	}
+#cardSlots > .draggable-item {
+	flex-grow: 1;
+	flex: 1 1 30%;
+	height: 110px;
+	margin: 0;
+	padding: 0;
+	margin-bottom:12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	}
+#cardSlots div:first-child,
+#cardPile div:first-child {
+	margin-left: 0;
+	}
+#cardSlots div.hovered {
+	b ackground: #aaa;
+	}
+#card1 {
+	background: url(../images/img-1-80.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#card2 {
+	background: url(../images/img-2-80.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#card3 {
+	background: url(../images/img-3-80.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#card4 {
+	background: url(../images/img-4-80.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#card5 {
+	background: url(../images/img-5-80.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#card6 {
+	background: url(../images/img-6-80.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#cardPile img {
+	width: 100%;
+	}
+	.words-item {
+	display: block;
+	text-align:center;
+	padding:0;
+	margin: 0 auto;
+	font-size: .9em;
+	width:77px;
+	}
+	.image-item {
+	display:block;
+	border:1px solid #333;
+	border-style:dashed;
+	width:76px;
+	height:76px;
+	margin:0 auto;
+	margin-bottom:15px;
+	}
+
+	}	/*	End @media(max-width: 599px) */
+
+@media (min-width: 600px) and (max-width: 899px) {
+
+#site-logo {
+	font-weight:normal;
+	font-size:1.3em;
+	background:rgb(55,55,55);
+	color:#fff;
+	padding: 5px 22px 5px 22px;
+	}
+#site-logo span {
+	float:right;
+	}
+#content {
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	}
+#cardPile {
+	width: 100%;
+	height: 240px;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	}
+#cardPile > .ui-draggable {
+	flex-grow: 1;
+	flex: 1 1 30%;
+	height: 100px;
+	margin:0;
+	padding: 0;
+	}
+#cardPile  > .ui-draggable:nth-child(-n+3) {
+	margin-bottom:6px;
+	}
+#cardSlots {
+	width: 100%;
+	height: 260px;
+	margin: 0 auto;
+	margin-top: 22px;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	}
+#cardSlots > .draggable-item {
+	flex-grow: 1;
+	flex: 1 1 30%;
+	height: 130px;
+	margin: 0;
+	padding: 0;
+	margin-bottom:12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	}
+#cardSlots div:first-child,
+#cardPile div:first-child {
+	margin-left: 0;
+	}
+#cardSlots div.hovered {
+	b ackground: #aaa;
+	}
+#card1 {
+	background: url(../images/img-1-100.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#card2 {
+	background: url(../images/img-2-100.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#card3 {
+	background: url(../images/img-3-100.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#card4 {
+	background: url(../images/img-4-100.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#card5 {
+	background: url(../images/img-5-100.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#card6 {
+	background: url(../images/img-6-100.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#cardSlots div {
+
+	}
+#cardPile img {
+	width: 100%;
+	}
+.words-item {
+	display: block;
+	padding:0;
+	margin: 0 auto;
+	font-size: .9em;
+	width:77px;
+	}
+.image-item {
+	display:block;
+	border:1px solid #333;
+	border-style:dashed;
+	width:96px;
+	height:96px;
+	margin:0 auto;
+	margin-bottom:15px;
+	}
+	}	/*	End @media ((min-width: 600px) and max-width: 899) */
+@media (min-width: 900px) and (max-width: 1023px) {
+#content {
+	width:98%;
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	}
+#cardPile {border-bottom:1px solid #ccc;
+	max-width: 1020px;
+	height: 150px;
+	margin: 0 auto;
+	padding: 0;
+	background: #ffd;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+#cardSlots {border-bottom:1px solid #ccc;
+	max-width: 1020px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+#cardPile div {
+	width: 100px;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 2em;
+	}
+#cardSlots div {
+	width: 100px;
+	height: 150px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	}
+#cardSlots div:first-child,
+#cardPile div:first-child {
+	margin-left: 0;
+	}
+#cardSlots div.hovered {
+	background: #aaa;
+	}
+#card1 {
+	 background: url(../images/img-1-100.png);
+	 background-repeat: no-repeat;	 
+	}
+#card2 {
+	 background: url(../images/img-2-100.png);
+	 background-repeat: no-repeat;	 
+	}
+#card3 {
+	 background: url(../images/img-3-100.png);
+	 background-repeat: no-repeat; 
+	}
+#card4 {
+	 background: url(../images/img-4-100.png);
+	 background-repeat: no-repeat;	 
+	}
+#card5 {
+	 background: url(../images/img-5-100.png);
+	 background-repeat: no-repeat; 
+	}
+#card6 {
+	 background: url(../images/img-6-100.png);
+	 background-repeat: no-repeat;	 
+	}
+#cardPile img {
+	width: 100%;
+	}
+.words-item {
+	display: block;
+	padding:6px 0;
+	margin-bottom: 8px;
+	font-size: 1.5em;
+	}
+.image-item {
+	display:block;
+	border:1px solid #333;
+	border-style:dashed;
+	width:96px;
+	height:96px;
+	margin:0 auto;
+	margin-bottom:15px;
+	}
+
+	}	/*	End @media ((min-width: 900px) and max-width: 1023px) */
+@media (min-width: 1024px) {
+
+#content {
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	}
+#cardPile {
+	max-width: 1020px;
+	height: 200px;
+	margin: 0 auto;
+	padding: 0;
+	background: #ffd;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+#cardSlots {
+	max-width: 1020px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+#cardPile div {
+	width: 150px;
+	height: 150px;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 2em;
+	}
+#cardSlots div {
+	width: 150px;
+	height: 210px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	}
+#cardSlots div:first-child,
+#cardPile div:first-child {
+	margin-left: 0;
+	}
+#cardSlots div.hovered {
+	background: #aaa;
+	}
+#card1 {
+	 background: url(../images/img-1-150.png);
+	 background-repeat: no-repeat;	 
+	}
+#card2 {
+	 background: url(../images/img-2-150.png);
+	 background-repeat: no-repeat;	 
+	}
+#card3 {
+	 background: url(../images/img-3-150.png);
+	 background-repeat: no-repeat;	 
+	}
+#card4 {
+	 background: url(../images/img-4-150.png);
+	 background-repeat: no-repeat;	 
+	}
+#card5 {
+	 background: url(../images/img-5-150.png);
+	 background-repeat: no-repeat;	 
+	}
+#card6 {
+	 background: url(../images/img-6-150.png);
+	 background-repeat: no-repeat;	 
+	}
+#cardPile img {
+	width: 100%;
+	}
+.words-item {
+	display: block;
+	background:rgb(171,171,171);
+	padding:6px 0;
+	margin-bottom: 12px;
+	font-size: 1.5em;
+	}
+.image-item {
+	display:block;
+	border:1px solid #333;
+	border-style:dashed;
+	width:146px;
+	height:146px;
+	margin:0 auto;
+	margin-bottom:15px;
+	}
+	}	/*	End @media (min-width: 1024px)	*/
