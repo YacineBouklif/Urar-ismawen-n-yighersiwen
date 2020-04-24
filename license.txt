@@ -1,7 +1,6 @@
 <!--
 Copyright (c) 2019 by Yacine Bouklif ( https://codepen.io/YacineBouklif/pen/BaaQybz )
 Email: yacinebouklif@gmail.com
-Images are from: https://pixabay.com 
 
 Fork of an original work by PedroCSilva ( https://codepen.io/PedroCSilva/pen/zBdxLx )
 
